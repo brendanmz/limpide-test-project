@@ -41,8 +41,10 @@ const SimpleLineChart = () => {
         <Line
           type='monotone'
           dataKey='close'
+          name='Closing price (€ / MWh)'
           stroke='#8884d8'
           activeDot={{ r: 8 }}
+          dot={false}
         />
       </LineChart>
     </ResponsiveContainer>
