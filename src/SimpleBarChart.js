@@ -48,8 +48,16 @@ const SimpleBarChart = () => {
         />
         <Tooltip />
         <Legend verticalAlign='top' height={36} />
-        <Bar dataKey='offexchtradevolumeeex' fill='#8884d8' />
-        <Bar dataKey='onexchtradevolumeeex' fill='#82ca9d' />
+        <Bar
+          dataKey='offexchtradevolumeeex'
+          name='Volume traded in OFF'
+          fill='#8884d8'
+        />
+        <Bar
+          dataKey='onexchtradevolumeeex'
+          name='Volume traded in ON'
+          fill='#82ca9d'
+        />
       </BarChart>
     </ResponsiveContainer>
   )
