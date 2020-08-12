@@ -13,8 +13,8 @@ const StyledMain = styled.main`
 
 function App() {
   return (
-    <div className='App'>
-      <header className='App-header'></header>
+    <div>
+      <header></header>
       <StyledMain>
         <SimpleLineChart />
         <SimpleBarChart />
