@@ -8,15 +8,14 @@ import {
   Tooltip,
   Legend,
   Line,
+  ResponsiveContainer,
 } from 'recharts'
 const SimpleLineChart = () => {
   const items = data['results']['items']
 
   return (
-    <>
+    <ResponsiveContainer width='90%' height={500}>
       <LineChart
-        width={1100}
-        height={600}
         data={items}
         margin={{ top: 5, right: 30, left: 20, bottom: 20 }}
       >
@@ -46,7 +45,7 @@ const SimpleLineChart = () => {
           activeDot={{ r: 8 }}
         />
       </LineChart>
-    </>
+    </ResponsiveContainer>
   )
 }
 

@@ -8,6 +8,7 @@ import {
   Legend,
   Bar,
   BarChart,
+  ResponsiveContainer,
 } from 'recharts'
 const SimpleBarChart = () => {
   const items = data['results']['items']
@@ -23,10 +24,8 @@ const SimpleBarChart = () => {
   })
 
   return (
-    <>
+    <ResponsiveContainer width='90%' height={500}>
       <BarChart
-        width={900}
-        height={500}
         data={filteredItems}
         margin={{ top: 20, right: 40, bottom: 20, left: 40 }}
       >
@@ -52,7 +51,7 @@ const SimpleBarChart = () => {
         <Bar dataKey='offexchtradevolumeeex' fill='#8884d8' />
         <Bar dataKey='onexchtradevolumeeex' fill='#82ca9d' />
       </BarChart>
-    </>
+    </ResponsiveContainer>
   )
 }
 
